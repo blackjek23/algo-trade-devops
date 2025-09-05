@@ -15,4 +15,4 @@ ATR_PERIOD = 14           # number of candles for ATR
 ATR_MULT   = 1.0          # multiplier (e.g., 1.0 = 1xATR, 2.0 = 2xATR)
 
 # --- Risk / Debug options ---
-DRY_RUN = True            # if True: do not send real orders, only print
+DRY_RUN = False            # if True: do not send real orders, only print

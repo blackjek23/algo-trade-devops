@@ -25,7 +25,7 @@ def main():
 
     # Check portfolio size limit
     if len(held_symbols) >= MAX_POSITIONS:
-        print(f"🚫 Already at max positions ({MAX_POSITIONS}). No new entries allowed.")
+        print(f"🚫 Already at max positions ({len(held_symbols)}/{MAX_POSITIONS}). No new entries allowed.")
         return
 
     for symbol in tickers:

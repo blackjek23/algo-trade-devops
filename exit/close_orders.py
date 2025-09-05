@@ -27,6 +27,7 @@ def close_positions(signals):
                 print(f"⚠️ DRY RUN: Would send {order.action} order to close {qty} {symbol}")
             else:
                 try:
+                    ib.qualifyContracts(p.contract)
                     ib.placeOrder(p.contract, order)
                     print(f"➡️ Sent {order.action} order to close {qty} {symbol}")
                 except Exception as e:

@@ -1,9 +1,8 @@
 # file: main.py
 import config
-# use the function that returns a dict of positions {symbol: {...}}
 from positions import get_open_tickers
 from data_fetch import get_historical_data
-from atr_check import run_atr_check
+from atr_check import run_atr_exit_check
 from close_orders import close_positions
 
 def main():
@@ -31,7 +30,7 @@ def main():
             continue
 
         # 4) Run ATR exit check for THIS symbol only
-        result = run_atr_check({symbol: df})
+        result = run_atr_exit_check({symbol: df})
         info = result.get(symbol)
         if not info:
             print(f"⚠️ No ATR result for {symbol}, skipping.")
@@ -40,7 +39,7 @@ def main():
         # Decide here: exit vs hold
         if info["signal"] != "exit":
             print(f"✅ No EXIT for {symbol} "
-                  f"(Close={info['close']:.2f}, ATR={info['atr']:.2f}, Exit={info['exit_level']:.2f})")
+                  f"(Close={info['close']:.2f}, ATR={info['atr']:.2f}, Exit={info['stop_level']:.2f})")
             continue
 
         # 5) Place close order immediately (only for this symbol)

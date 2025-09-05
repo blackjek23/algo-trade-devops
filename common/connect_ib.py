@@ -1,8 +1,4 @@
 # file: connect_ib.py
-import os
-from ib_insync import IB
-
-# file: connect_ib.py
 from ib_insync import IB
 import config
 

@@ -47,6 +47,7 @@ def place_entry_orders(buy_signals, allocation_pct=0.1):
             if config.DRY_RUN:
                 print(f"⚠️ DRY RUN: Would BUY {qty} shares of {symbol} at ~{last_price:.2f}")
             else:
+                ib.qualifyContracts(contract)
                 ib.placeOrder(contract, order)
                 print(f"✅ Sent BUY order: {qty} {symbol} at ~{last_price:.2f}")
 
