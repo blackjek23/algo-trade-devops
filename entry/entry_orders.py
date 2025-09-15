@@ -3,6 +3,7 @@ from ib_insync import Stock, MarketOrder
 from connect_ib import connect_ib, disconnect_ib
 import config
 
+
 def place_entry_orders(buy_signals, allocation_pct=0.1):
     """
     Place market BUY orders for tickers in buy_signals.
@@ -45,7 +46,9 @@ def place_entry_orders(buy_signals, allocation_pct=0.1):
             order = MarketOrder("BUY", qty)
 
             if config.DRY_RUN:
-                print(f"⚠️ DRY RUN: Would BUY {qty} shares of {symbol} at ~{last_price:.2f}")
+                print(
+                    f"⚠️ DRY RUN: Would BUY {qty} shares of {symbol} at ~{last_price:.2f}"
+                )
             else:
                 ib.qualifyContracts(contract)
                 ib.placeOrder(contract, order)
@@ -56,11 +59,12 @@ def place_entry_orders(buy_signals, allocation_pct=0.1):
 
     disconnect_ib(ib)
 
+
 # Standalone test
 if __name__ == "__main__":
     # Pretend signals from entry_check.py
     test_signals = {
         "AAPL": {"close": 192.50, "signal": "buy"},
-        "MSFT": {"close": 330.40, "signal": "hold"}
+        "MSFT": {"close": 330.40, "signal": "hold"},
     }
     place_entry_orders(test_signals, allocation_pct=0.05)

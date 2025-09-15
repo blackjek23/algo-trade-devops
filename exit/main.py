@@ -5,6 +5,7 @@ from data_fetch import get_historical_data
 from atr_check import run_atr_exit_check
 from close_orders import close_positions
 
+
 def main():
     print("🚀 Starting Sequential Exit Bot")
 
@@ -23,7 +24,9 @@ def main():
         print(f"\n--- 🔍 Checking {symbol} ---")
 
         # 3) Download stock data (just this symbol)
-        hist_data = get_historical_data([symbol], period=config.YF_PERIOD, interval=config.YF_INTERVAL)
+        hist_data = get_historical_data(
+            [symbol], period=config.YF_PERIOD, interval=config.YF_INTERVAL
+        )
         df = hist_data.get(symbol)
         if df is None or df.empty:
             print(f"⚠️ No data for {symbol}, skipping.")
@@ -38,8 +41,10 @@ def main():
 
         # Decide here: exit vs hold
         if info["signal"] != "exit":
-            print(f"✅ No EXIT for {symbol} "
-                  f"(Close={info['close']:.2f}, ATR={info['atr']:.2f}, Exit={info['stop_level']:.2f})")
+            print(
+                f"✅ No EXIT for {symbol} "
+                f"(Close={info['close']:.2f}, ATR={info['atr']:.2f}, Exit={info['stop_level']:.2f})"
+            )
             continue
 
         # 5) Place close order immediately (only for this symbol)
@@ -47,6 +52,7 @@ def main():
         close_positions({symbol: info})
 
     print("\n🎉 Sequential Exit Bot finished.")
+
 
 if __name__ == "__main__":
     main()

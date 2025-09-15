@@ -2,6 +2,7 @@
 from ib_insync import Stock
 from connect_ib import connect_ib, disconnect_ib
 
+
 def get_open_tickers():
     """
     Fetch open positions from IBKR.

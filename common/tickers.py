@@ -1,5 +1,6 @@
 # file: tickers.py
 
+
 def load_tickers(filename="stocks.txt"):
     """
     Load ticker symbols from a text file.

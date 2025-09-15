@@ -1,6 +1,7 @@
 # file: common/positions.py
 from connect_ib import connect_ib, disconnect_ib
 
+
 def get_open_tickers(verbose=False):
     """
     Fetch open positions from IBKR.
@@ -13,10 +14,7 @@ def get_open_tickers(verbose=False):
         positions = ib.positions()
         for pos in positions:
             symbol = pos.contract.symbol
-            open_positions[symbol] = {
-                "qty": pos.position,
-                "avgCost": pos.avgCost
-            }
+            open_positions[symbol] = {"qty": pos.position, "avgCost": pos.avgCost}
             if verbose:
                 print(f"📊 {symbol}: Qty={pos.position}, AvgCost={pos.avgCost:.2f}")
     except Exception as e:

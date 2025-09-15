@@ -8,6 +8,7 @@ from positions import get_open_tickers
 
 MAX_POSITIONS = 50  # maximum number of holdings allowed
 
+
 def main():
     print("🚀 Starting Sequential Entry Bot")
 
@@ -21,11 +22,15 @@ def main():
     held_symbols = set(open_positions.keys())
 
     print(f"📋 {len(tickers)} tickers loaded. Processing one by one...")
-    print(f"🔒 Currently holding: {', '.join(held_symbols) if held_symbols else 'None'}")
+    print(
+        f"🔒 Currently holding: {', '.join(held_symbols) if held_symbols else 'None'}"
+    )
 
     # Check portfolio size limit
     if len(held_symbols) >= MAX_POSITIONS:
-        print(f"🚫 Already at max positions ({len(held_symbols)}/{MAX_POSITIONS}). No new entries allowed.")
+        print(
+            f"🚫 Already at max positions ({len(held_symbols)}/{MAX_POSITIONS}). No new entries allowed."
+        )
         return
 
     for symbol in tickers:
@@ -42,7 +47,9 @@ def main():
             break
 
         # 1. Download stock data (just this symbol)
-        hist_data = get_historical_data([symbol], period=config.YF_PERIOD, interval=config.YF_INTERVAL)
+        hist_data = get_historical_data(
+            [symbol], period=config.YF_PERIOD, interval=config.YF_INTERVAL
+        )
 
         if symbol not in hist_data or hist_data[symbol].empty:
             print(f"⚠️ No data for {symbol}, skipping.")

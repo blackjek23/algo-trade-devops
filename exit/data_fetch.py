@@ -3,12 +3,13 @@ import yfinance as yf
 import pandas as pd
 import config
 
+
 def get_historical_data(tickers, period=None, interval=None):
     """
     Download historical OHLCV data for each ticker.
     Returns {ticker: DataFrame}
     """
-    period   = period or config.YF_PERIOD
+    period = period or config.YF_PERIOD
     interval = interval or config.YF_INTERVAL
 
     if not tickers:
@@ -19,8 +20,13 @@ def get_historical_data(tickers, period=None, interval=None):
     data = {}
     for symbol in tickers:
         try:
-            df = yf.download(symbol, period=period, interval=interval,
-                             auto_adjust=True, progress=False)
+            df = yf.download(
+                symbol,
+                period=period,
+                interval=interval,
+                auto_adjust=True,
+                progress=False,
+            )
 
             # flatten MultiIndex if needed
             if isinstance(df.columns, pd.MultiIndex):
@@ -34,6 +40,7 @@ def get_historical_data(tickers, period=None, interval=None):
         except Exception as e:
             print(f"❌ Error fetching {symbol}: {e}")
     return data
+
 
 # Run standalone for quick test
 if __name__ == "__main__":

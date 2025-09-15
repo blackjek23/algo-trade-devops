@@ -3,6 +3,7 @@ from ib_insync import MarketOrder
 from connect_ib import connect_ib, disconnect_ib
 import config
 
+
 def close_positions(signals):
     ib = connect_ib()
     portfolio = ib.portfolio()
@@ -24,7 +25,9 @@ def close_positions(signals):
                 order = MarketOrder("BUY", abs(qty))
 
             if config.DRY_RUN:
-                print(f"⚠️ DRY RUN: Would send {order.action} order to close {qty} {symbol}")
+                print(
+                    f"⚠️ DRY RUN: Would send {order.action} order to close {qty} {symbol}"
+                )
             else:
                 try:
                     ib.qualifyContracts(p.contract)
@@ -37,11 +40,9 @@ def close_positions(signals):
 
     disconnect_ib(ib)
 
+
 # Run standalone for quick test
 if __name__ == "__main__":
     # Example: pretend ATR signals
-    test_signals = {
-        "AAPL": {"signal": "exit"},
-        "MSFT": {"signal": "hold"}
-    }
+    test_signals = {"AAPL": {"signal": "exit"}, "MSFT": {"signal": "hold"}}
     close_positions(test_signals)

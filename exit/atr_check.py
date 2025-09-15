@@ -3,6 +3,7 @@ import backtrader as bt
 import pandas as pd
 import config
 
+
 class ATRExitStrategy(bt.Strategy):
     params = dict(period=config.ATR_PERIOD, atr_mult=config.ATR_MULT)
 
@@ -12,7 +13,7 @@ class ATRExitStrategy(bt.Strategy):
 
     def next(self):
         last_close = self.data.close[0]
-        last_atr   = self.atr[0]
+        last_atr = self.atr[0]
 
         # Initial stop (first calculation)
         if self.stop_level is None:
@@ -30,10 +31,12 @@ class ATRExitStrategy(bt.Strategy):
 
         # Save values for reporting
         self.last_close = last_close
-        self.last_atr   = last_atr
+        self.last_atr = last_atr
 
 
-def run_atr_exit_check(hist_data, atr_period=config.ATR_PERIOD, atr_mult=config.ATR_MULT):
+def run_atr_exit_check(
+    hist_data, atr_period=config.ATR_PERIOD, atr_mult=config.ATR_MULT
+):
     """
     Run ATR trailing stop check for each ticker using Backtrader.
     Returns {ticker: {...}}
@@ -57,7 +60,7 @@ def run_atr_exit_check(hist_data, atr_period=config.ATR_PERIOD, atr_mult=config.
             "close": strat.last_close,
             "atr": strat.last_atr,
             "stop_level": strat.stop_level,
-            "signal": strat.signal
+            "signal": strat.signal,
         }
 
         print(
