@@ -34,9 +34,6 @@ def run_entry_check(hist_data, bb_period=20, bb_std=2):
 
         if last_close > upper_band:  # breakout above upper band
             buy_signals[symbol] = {"close": last_close, "signal": "buy"}
-            print(
-                f"✅ BUY signal: {symbol} (Close={last_close:.2f}, Upper={upper_band:.2f})"
-            )
 
     return buy_signals
 
@@ -52,4 +49,4 @@ if __name__ == "__main__":
     )
     signals = run_entry_check(hist_data)
 
-    print("\n📊 Final BUY Signals:", signals)
+    # print("\n📊 Final BUY Signals:", signals)

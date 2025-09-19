@@ -1,0 +1,10 @@
+services:
+  ATR-exit:
+    image: exit-atr:paper-true
+    network_mode: "host"
+  BBand-enter:
+    image: entry-bband:paper-true
+    network_mode: "host"
+    depends_on:
+      ATR-exit:
+        condition: service_completed_successfully

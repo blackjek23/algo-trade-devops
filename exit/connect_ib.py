@@ -9,9 +9,7 @@ import config
 
 def connect_ib() -> IB:
     ib = IB()
-    print(
-        f"🔌 Connecting to IBKR at {config.TWS_HOST}:{config.TWS_PORT} (clientId={config.CLIENT_ID}) ..."
-    )
+
     ib.connect(
         config.TWS_HOST,
         config.TWS_PORT,
@@ -19,15 +17,12 @@ def connect_ib() -> IB:
         timeout=config.TIMEOUT,
     )
     _ = ib.reqCurrentTime()  # simple test
-    print("✅ Connected.")
     return ib
 
 
 def disconnect_ib(ib: IB) -> None:
     if ib and ib.isConnected():
-        print("🔌 Disconnecting...")
         ib.disconnect()
-        print("✅ Disconnected.")
 
 
 # Run standalone for quick connection test

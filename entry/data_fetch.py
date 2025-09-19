@@ -13,10 +13,8 @@ def get_historical_data(tickers, period=None, interval=None):
     interval = interval or config.YF_INTERVAL
 
     if not tickers:
-        print("⚠️ No tickers provided for historical data fetch.")
         return {}
 
-    print(f"\n📥 Downloading historical data (period={period}, interval={interval})...")
     data = {}
     for symbol in tickers:
         try:
@@ -34,9 +32,6 @@ def get_historical_data(tickers, period=None, interval=None):
 
             if not df.empty:
                 data[symbol] = df
-                print(f"✅ {symbol}: {len(df)} rows retrieved")
-            else:
-                print(f"⚠️ {symbol}: no data retrieved")
         except Exception as e:
             print(f"❌ Error fetching {symbol}: {e}")
     return data
@@ -48,6 +43,6 @@ if __name__ == "__main__":
     test_tickers = ["AAPL", "MSFT"]
     hist_data = get_historical_data(test_tickers, period="1mo", interval="1d")
 
-    for t, df in hist_data.items():
-        print(f"\n📈 {t} (last 5 rows):")
-        print(df.tail())
+    # for t, df in hist_data.items():
+    #     print(f"\n📈 {t} (last 5 rows):")
+    #     print(df.tail())

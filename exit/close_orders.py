@@ -8,11 +8,9 @@ def close_positions(signals):
     ib = connect_ib()
     portfolio = ib.portfolio()
     if not portfolio:
-        print("📭 No open positions.")
         disconnect_ib(ib)
         return
 
-    print("\n🔒 Checking positions to close...")
     for p in portfolio:
         symbol = p.contract.symbol
         qty = p.position
@@ -23,20 +21,12 @@ def close_positions(signals):
                 order = MarketOrder("SELL", qty)
             else:
                 order = MarketOrder("BUY", abs(qty))
-
-            if config.DRY_RUN:
-                print(
-                    f"⚠️ DRY RUN: Would send {order.action} order to close {qty} {symbol}"
-                )
-            else:
-                try:
-                    ib.qualifyContracts(p.contract)
-                    ib.placeOrder(p.contract, order)
-                    print(f"➡️ Sent {order.action} order to close {qty} {symbol}")
-                except Exception as e:
-                    print(f"❌ Error closing {symbol}: {e}")
-        # else:
-        #     print(f"⏸️ Holding {symbol} (Qty={qty}, Signal={sig})")
+            try:
+                ib.qualifyContracts(p.contract)
+                ib.placeOrder(p.contract, order)
+                print(f"➡️ Sent {order.action} order to close {qty} {symbol}")
+            except Exception as e:
+                print(f"❌ Error closing {symbol}: {e}")
 
     disconnect_ib(ib)
 

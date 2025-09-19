@@ -63,14 +63,7 @@ def run_atr_exit_check(
             "signal": strat.signal,
         }
 
-        print(
-            f"\n📈 {symbol}: Close={strat.last_close:.2f}, "
-            f"ATR={strat.last_atr:.2f}, "
-            f"Stop={strat.stop_level:.2f}, "
-            f"Signal={strat.signal.upper()}"
-        )
-
-    return results
+        return results
 
 
 # Run standalone for quick test
@@ -83,4 +76,4 @@ if __name__ == "__main__":
 
     signals = run_atr_exit_check(hist_data, atr_period=14, atr_mult=1.5)
 
-    print("\n📊 Summary:", signals)
+    # print("\n📊 Summary:", signals)
