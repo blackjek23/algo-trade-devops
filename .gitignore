@@ -1,3 +1,5 @@
 /new
 __pycache__
 stocks.txt
+.github
+checks.py

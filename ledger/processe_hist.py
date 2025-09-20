@@ -1,5 +1,8 @@
 import pandas as pd
 
+# o= Opening Trade
+# p= Partial Execution
+# c= Closing Trade
 
 column_names = [
     "Trades",
@@ -21,11 +24,15 @@ column_names = [
     "Code",
 ]
 
-# o= Opening Trade
-# p= Partial Execution
-# c= Closing Trade
 
 # sort by date
-df = pd.read_csv("ledger/trade_rows.csv", names=column_names)
-df["Date/Time"] = pd.to_datetime(df["Date/Time"])
-df_sorted = df.sort_values("Date/Time")
+def sort_by_date():
+    df = pd.read_csv("ledger/trade_rows.csv", names=column_names)
+    df["Date/Time"] = pd.to_datetime(df["Date/Time"])
+    df_sorted = df.sort_values("Date/Time")
+    return df_sorted
+
+
+if __name__ == "__main__":
+    df_sorted = sort_by_date()
+    df_sorted.to_csv("ledger/trade_rows.csv", index=False)
