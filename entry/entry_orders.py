@@ -4,11 +4,11 @@ from connect_ib import connect_ib, disconnect_ib
 import config
 
 
-def place_entry_orders(buy_signals, allocation_pct=0.1):
+def place_entry_orders(buy_signals, allocation_pct=0.02):
     """
     Place market BUY orders for tickers in buy_signals.
     buy_signals = {ticker: {"close": last_close, "signal": "buy"}}
-    - allocation_pct: fraction of NetLiquidation to invest per trade (e.g., 0.1 = 10%)
+    - allocation_pct: fraction of NetLiquidation to invest per trade (e.g., 0.02 = 2%)
     """
     if not buy_signals:
         return

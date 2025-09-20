@@ -48,7 +48,8 @@ def main():
             continue
 
         # 3. Place order immediately
-        place_entry_orders(signals, allocation_pct=0.1)
+        place_entry_orders(signals, allocation_pct=0.02)
+        # 2% allocation per new position
 
 
 if __name__ == "__main__":
