@@ -1,8 +1,10 @@
 services:
   ATR-exit:
+    build: ./exit  
     image: exit-atr:paper-true
     network_mode: "host"
   BBand-enter:
+    build: ./entry  
     image: entry-bband:paper-true
     network_mode: "host"
     depends_on:
