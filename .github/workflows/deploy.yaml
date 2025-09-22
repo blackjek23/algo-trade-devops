@@ -29,10 +29,10 @@ jobs:
           git pull origin main
           
           # Stop existing containers
-          docker-compose down
+          docker compose down
           
           # Rebuild and start containers
-          docker-compose up -d --build
+          docker compose up -d --build
           
           # Optional: Clean up unused images
           docker image prune -f
