@@ -448,5 +448,195 @@
     "avgPrice": 81.32,
     "commission": 1.000528,
     "realizedPNL": 0.0
+  },
+  {
+    "time": "2025-10-08 16:30:00 IDT",
+    "symbol": "MSFT",
+    "side": "SLD",
+    "shares": 3.0,
+    "price": 523.0,
+    "avgPrice": 523.0,
+    "commission": 1.000564,
+    "realizedPNL": -18.710664
+  },
+  {
+    "time": "2025-10-08 16:30:03 IDT",
+    "symbol": "CSCO",
+    "side": "SLD",
+    "shares": 28.0,
+    "price": 69.49,
+    "avgPrice": 69.49,
+    "commission": 1.005264,
+    "realizedPNL": 7.794136
+  },
+  {
+    "time": "2025-10-08 16:30:05 IDT",
+    "symbol": "VTR",
+    "side": "SLD",
+    "shares": 27.0,
+    "price": 68.31,
+    "avgPrice": 68.31,
+    "commission": 1.005076,
+    "realizedPNL": -48.175676
+  },
+  {
+    "time": "2025-10-08 16:30:05 IDT",
+    "symbol": "HAL",
+    "side": "SLD",
+    "shares": 80.0,
+    "price": 24.22,
+    "avgPrice": 24.22,
+    "commission": 1.01504,
+    "realizedPNL": -35.61684
+  },
+  {
+    "time": "2025-10-08 16:30:08 IDT",
+    "symbol": "UNP",
+    "side": "SLD",
+    "shares": 8.0,
+    "price": 230.0,
+    "avgPrice": 230.0,
+    "commission": 1.001504,
+    "realizedPNL": -1.601704
+  },
+  {
+    "time": "2025-10-08 16:30:08 IDT",
+    "symbol": "PYPL",
+    "side": "SLD",
+    "shares": 27.0,
+    "price": 74.97,
+    "avgPrice": 74.97,
+    "commission": 1.005076,
+    "realizedPNL": 17.164324
+  },
+  {
+    "time": "2025-10-08 16:30:11 IDT",
+    "symbol": "AMAT",
+    "side": "SLD",
+    "shares": 9.0,
+    "price": 209.9,
+    "avgPrice": 209.9,
+    "commission": 1.001692,
+    "realizedPNL": 100.598108
+  },
+  {
+    "time": "2025-10-08 16:30:11 IDT",
+    "symbol": "DHR",
+    "side": "SLD",
+    "shares": 9.0,
+    "price": 206.98,
+    "avgPrice": 206.98,
+    "commission": 1.001692,
+    "realizedPNL": -47.181892
+  },
+  {
+    "time": "2025-10-08 16:30:11 IDT",
+    "symbol": "TWLO",
+    "side": "SLD",
+    "shares": 18.0,
+    "price": 108.43,
+    "avgPrice": 108.43,
+    "commission": 1.003384,
+    "realizedPNL": -37.463784
+  },
+  {
+    "time": "2025-10-08 16:30:11 IDT",
+    "symbol": "TER",
+    "side": "SLD",
+    "shares": 14.0,
+    "price": 140.14,
+    "avgPrice": 140.14,
+    "commission": 1.002632,
+    "realizedPNL": 74.437068
+  },
+  {
+    "time": "2025-10-08 16:30:11 IDT",
+    "symbol": "TTD",
+    "side": "SLD",
+    "shares": 37.0,
+    "price": 53.56,
+    "avgPrice": 53.56,
+    "commission": 1.006956,
+    "realizedPNL": -66.387756
+  },
+  {
+    "time": "2025-10-08 16:30:15 IDT",
+    "symbol": "CMG",
+    "side": "SLD",
+    "shares": 47.0,
+    "price": 40.85,
+    "avgPrice": 40.85,
+    "commission": 1.008836,
+    "realizedPNL": -39.139836
+  },
+  {
+    "time": "2025-10-08 16:30:17 IDT",
+    "symbol": "SMCI",
+    "side": "SLD",
+    "shares": 36.0,
+    "price": 55.0,
+    "avgPrice": 55.0,
+    "commission": 1.006768,
+    "realizedPNL": -51.327568
+  },
+  {
+    "time": "2025-10-08 16:30:17 IDT",
+    "symbol": "AVTR",
+    "side": "SLD",
+    "shares": 142.0,
+    "price": 13.5,
+    "avgPrice": 13.5,
+    "commission": 1.026696,
+    "realizedPNL": -57.409796
+  },
+  {
+    "time": "2025-10-08 16:31:08 IDT",
+    "symbol": "MRK",
+    "side": "SLD",
+    "shares": 21.0,
+    "price": 87.5,
+    "avgPrice": 87.5,
+    "commission": 1.003948,
+    "realizedPNL": -49.044448
+  },
+  {
+    "time": "2025-10-08 16:31:14 IDT",
+    "symbol": "UPS",
+    "side": "SLD",
+    "shares": 22.0,
+    "price": 85.21,
+    "avgPrice": 85.21,
+    "commission": 1.004136,
+    "realizedPNL": -45.564636
+  },
+  {
+    "time": "2025-10-08 16:31:45 IDT",
+    "symbol": "F",
+    "side": "SLD",
+    "shares": 64.0,
+    "price": 11.97,
+    "avgPrice": 11.97,
+    "commission": 1.012032,
+    "realizedPNL": -8.443681
+  },
+  {
+    "time": "2025-10-08 16:31:45 IDT",
+    "symbol": "F",
+    "side": "SLD",
+    "shares": 100.0,
+    "price": 11.97,
+    "avgPrice": 11.97,
+    "commission": 0.0188,
+    "realizedPNL": -11.630751
+  },
+  {
+    "time": "2025-10-08 16:31:56 IDT",
+    "symbol": "DD",
+    "side": "SLD",
+    "shares": 24.0,
+    "price": 78.78,
+    "avgPrice": 78.78,
+    "commission": 1.004512,
+    "realizedPNL": -62.965012
   }
 ]
