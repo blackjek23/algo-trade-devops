@@ -1,0 +1,452 @@
+[
+  {
+    "time": "2025-09-30 16:30:02 IDT",
+    "symbol": "CSX",
+    "side": "BOT",
+    "shares": 54.0,
+    "price": 35.7,
+    "avgPrice": 35.7,
+    "commission": 1.001188,
+    "realizedPNL": 0.0
+  },
+  {
+    "time": "2025-09-30 16:30:04 IDT",
+    "symbol": "DVN",
+    "side": "SLD",
+    "shares": 53.0,
+    "price": 34.95,
+    "avgPrice": 34.95,
+    "commission": 1.009964,
+    "realizedPNL": -90.521164
+  },
+  {
+    "time": "2025-09-30 16:30:04 IDT",
+    "symbol": "RBLX",
+    "side": "BOT",
+    "shares": 13.0,
+    "price": 141.21,
+    "avgPrice": 141.21,
+    "commission": 1.000286,
+    "realizedPNL": 0.0
+  },
+  {
+    "time": "2025-09-30 16:30:06 IDT",
+    "symbol": "HOOD",
+    "side": "BOT",
+    "shares": 14.0,
+    "price": 136.57,
+    "avgPrice": 136.57,
+    "commission": 1.000308,
+    "realizedPNL": 0.0
+  },
+  {
+    "time": "2025-09-30 16:30:10 IDT",
+    "symbol": "NI",
+    "side": "BOT",
+    "shares": 45.0,
+    "price": 43.33,
+    "avgPrice": 43.33,
+    "commission": 1.00099,
+    "realizedPNL": 0.0
+  },
+  {
+    "time": "2025-09-30 16:30:10 IDT",
+    "symbol": "DDOG",
+    "side": "BOT",
+    "shares": 13.0,
+    "price": 144.5,
+    "avgPrice": 144.5,
+    "commission": 1.000286,
+    "realizedPNL": 0.0
+  },
+  {
+    "time": "2025-09-30 16:30:10 IDT",
+    "symbol": "ED",
+    "side": "SLD",
+    "shares": 19.0,
+    "price": 99.14,
+    "avgPrice": 99.14,
+    "commission": 1.003572,
+    "realizedPNL": -15.873972
+  },
+  {
+    "time": "2025-09-30 16:30:10 IDT",
+    "symbol": "K",
+    "side": "BOT",
+    "shares": 23.0,
+    "price": 81.9,
+    "avgPrice": 81.9,
+    "commission": 1.000506,
+    "realizedPNL": 0.0
+  },
+  {
+    "time": "2025-09-30 16:30:13 IDT",
+    "symbol": "MNST",
+    "side": "BOT",
+    "shares": 29.0,
+    "price": 67.18,
+    "avgPrice": 67.18,
+    "commission": 1.000638,
+    "realizedPNL": 0.0
+  },
+  {
+    "time": "2025-09-30 16:30:13 IDT",
+    "symbol": "CME",
+    "side": "BOT",
+    "shares": 7.0,
+    "price": 273.47,
+    "avgPrice": 273.47,
+    "commission": 1.000154,
+    "realizedPNL": 0.0
+  },
+  {
+    "time": "2025-09-30 16:30:21 IDT",
+    "symbol": "CMS",
+    "side": "BOT",
+    "shares": 26.0,
+    "price": 73.13,
+    "avgPrice": 73.13,
+    "commission": 1.000572,
+    "realizedPNL": 0.0
+  },
+  {
+    "time": "2025-09-30 16:30:21 IDT",
+    "symbol": "EQT",
+    "side": "BOT",
+    "shares": 35.0,
+    "price": 54.39,
+    "avgPrice": 54.39,
+    "commission": 1.00077,
+    "realizedPNL": 0.0
+  },
+  {
+    "time": "2025-09-30 16:30:21 IDT",
+    "symbol": "SO",
+    "side": "SLD",
+    "shares": 20.0,
+    "price": 93.69,
+    "avgPrice": 93.69,
+    "commission": 1.00376,
+    "realizedPNL": -15.20416
+  },
+  {
+    "time": "2025-09-30 16:30:36 IDT",
+    "symbol": "JNJ",
+    "side": "BOT",
+    "shares": 10.0,
+    "price": 181.87,
+    "avgPrice": 181.87,
+    "commission": 1.00022,
+    "realizedPNL": 0.0
+  },
+  {
+    "time": "2025-09-30 16:33:49 IDT",
+    "symbol": "XOM",
+    "side": "SLD",
+    "shares": 16.0,
+    "price": 113.13,
+    "avgPrice": 113.13,
+    "commission": 1.003008,
+    "realizedPNL": -50.483408
+  },
+  {
+    "time": "2025-10-03 16:30:01 IDT",
+    "symbol": "WELL",
+    "side": "SLD",
+    "shares": 11.0,
+    "price": 174.99,
+    "avgPrice": 174.99,
+    "commission": 1.002068,
+    "realizedPNL": 13.947732
+  },
+  {
+    "time": "2025-10-03 16:30:04 IDT",
+    "symbol": "MRNA",
+    "side": "BOT",
+    "shares": 69.0,
+    "price": 28.86,
+    "avgPrice": 28.86,
+    "commission": 1.001518,
+    "realizedPNL": 0.0
+  },
+  {
+    "time": "2025-10-03 16:30:11 IDT",
+    "symbol": "IPG",
+    "side": "SLD",
+    "shares": 69.0,
+    "price": 26.2,
+    "avgPrice": 26.2,
+    "commission": 1.012972,
+    "realizedPNL": -126.214472
+  },
+  {
+    "time": "2025-10-03 16:30:11 IDT",
+    "symbol": "OMC",
+    "side": "SLD",
+    "shares": 23.0,
+    "price": 76.39,
+    "avgPrice": 76.39,
+    "commission": 1.004324,
+    "realizedPNL": -125.284824
+  },
+  {
+    "time": "2025-10-03 16:30:11 IDT",
+    "symbol": "DDOG",
+    "side": "BOT",
+    "shares": 12.0,
+    "price": 152.2,
+    "avgPrice": 152.2,
+    "commission": 1.000264,
+    "realizedPNL": 0.0
+  },
+  {
+    "time": "2025-10-03 16:30:11 IDT",
+    "symbol": "AMGN",
+    "side": "BOT",
+    "shares": 6.0,
+    "price": 298.0,
+    "avgPrice": 298.0,
+    "commission": 1.000132,
+    "realizedPNL": 0.0
+  },
+  {
+    "time": "2025-10-03 16:30:11 IDT",
+    "symbol": "ROST",
+    "side": "BOT",
+    "shares": 12.0,
+    "price": 156.49,
+    "avgPrice": 156.49,
+    "commission": 1.000264,
+    "realizedPNL": 0.0
+  },
+  {
+    "time": "2025-10-03 16:30:11 IDT",
+    "symbol": "LLY",
+    "side": "BOT",
+    "shares": 2.0,
+    "price": 824.78,
+    "avgPrice": 824.78,
+    "commission": 1.000044,
+    "realizedPNL": 0.0
+  },
+  {
+    "time": "2025-10-03 16:30:11 IDT",
+    "symbol": "GM",
+    "side": "SLD",
+    "shares": 32.0,
+    "price": 59.31,
+    "avgPrice": 59.31,
+    "commission": 1.006016,
+    "realizedPNL": -49.366716
+  },
+  {
+    "time": "2025-10-03 16:30:11 IDT",
+    "symbol": "DHR",
+    "side": "BOT",
+    "shares": 9.0,
+    "price": 212.0,
+    "avgPrice": 212.0,
+    "commission": 1.000198,
+    "realizedPNL": 0.0
+  },
+  {
+    "time": "2025-10-03 16:30:11 IDT",
+    "symbol": "AVTR",
+    "side": "BOT",
+    "shares": 100.0,
+    "price": 13.89,
+    "avgPrice": 13.89,
+    "commission": 1.0022,
+    "realizedPNL": 0.0
+  },
+  {
+    "time": "2025-10-03 16:30:11 IDT",
+    "symbol": "COIN",
+    "side": "BOT",
+    "shares": 5.0,
+    "price": 374.65,
+    "avgPrice": 374.65,
+    "commission": 1.00011,
+    "realizedPNL": 0.0
+  },
+  {
+    "time": "2025-10-03 16:30:11 IDT",
+    "symbol": "OKTA",
+    "side": "BOT",
+    "shares": 20.0,
+    "price": 95.0,
+    "avgPrice": 95.0,
+    "commission": 1.00044,
+    "realizedPNL": 0.0
+  },
+  {
+    "time": "2025-10-03 16:30:12 IDT",
+    "symbol": "PPL",
+    "side": "SLD",
+    "shares": 53.0,
+    "price": 36.32,
+    "avgPrice": 36.32,
+    "commission": 1.009964,
+    "realizedPNL": -29.571164
+  },
+  {
+    "time": "2025-10-03 16:30:12 IDT",
+    "symbol": "CCI",
+    "side": "SLD",
+    "shares": 20.0,
+    "price": 95.17,
+    "avgPrice": 95.17,
+    "commission": 1.00376,
+    "realizedPNL": -38.60416
+  },
+  {
+    "time": "2025-10-03 16:30:12 IDT",
+    "symbol": "ABBV",
+    "side": "SLD",
+    "shares": 8.0,
+    "price": 236.5,
+    "avgPrice": 236.5,
+    "commission": 1.001504,
+    "realizedPNL": 14.958296
+  },
+  {
+    "time": "2025-10-03 16:30:12 IDT",
+    "symbol": "SNOW",
+    "side": "BOT",
+    "shares": 8.0,
+    "price": 242.23,
+    "avgPrice": 242.23,
+    "commission": 1.000176,
+    "realizedPNL": 0.0
+  },
+  {
+    "time": "2025-10-03 16:30:15 IDT",
+    "symbol": "WDC",
+    "side": "BOT",
+    "shares": 14.0,
+    "price": 132.2,
+    "avgPrice": 132.2,
+    "commission": 1.000308,
+    "realizedPNL": 0.0
+  },
+  {
+    "time": "2025-10-03 16:30:15 IDT",
+    "symbol": "TJX",
+    "side": "SLD",
+    "shares": 13.0,
+    "price": 142.38,
+    "avgPrice": 142.38,
+    "commission": 1.002444,
+    "realizedPNL": -14.742744
+  },
+  {
+    "time": "2025-10-03 16:30:15 IDT",
+    "symbol": "VRT",
+    "side": "BOT",
+    "shares": 12.0,
+    "price": 162.21,
+    "avgPrice": 162.21,
+    "commission": 1.000264,
+    "realizedPNL": 0.0
+  },
+  {
+    "time": "2025-10-03 16:30:15 IDT",
+    "symbol": "AVTR",
+    "side": "BOT",
+    "shares": 42.0,
+    "price": 13.89,
+    "avgPrice": 13.89,
+    "commission": 0.000924,
+    "realizedPNL": 0.0
+  },
+  {
+    "time": "2025-10-03 16:30:15 IDT",
+    "symbol": "SBUX",
+    "side": "BOT",
+    "shares": 22.0,
+    "price": 86.59,
+    "avgPrice": 86.59,
+    "commission": 1.000484,
+    "realizedPNL": 0.0
+  },
+  {
+    "time": "2025-10-03 16:30:15 IDT",
+    "symbol": "AMD",
+    "side": "BOT",
+    "shares": 11.0,
+    "price": 169.92,
+    "avgPrice": 169.92,
+    "commission": 1.000242,
+    "realizedPNL": 0.0
+  },
+  {
+    "time": "2025-10-03 16:30:15 IDT",
+    "symbol": "SMCI",
+    "side": "BOT",
+    "shares": 37.0,
+    "price": 53.07,
+    "avgPrice": 53.07,
+    "commission": 1.000814,
+    "realizedPNL": 0.0
+  },
+  {
+    "time": "2025-10-03 16:30:15 IDT",
+    "symbol": "SYM",
+    "side": "BOT",
+    "shares": 30.0,
+    "price": 65.16,
+    "avgPrice": 65.16,
+    "commission": 1.00066,
+    "realizedPNL": 0.0
+  },
+  {
+    "time": "2025-10-03 16:30:30 IDT",
+    "symbol": "ED",
+    "side": "SLD",
+    "shares": 19.0,
+    "price": 97.61,
+    "avgPrice": 97.61,
+    "commission": 1.003572,
+    "realizedPNL": -64.133972
+  },
+  {
+    "time": "2025-10-03 16:30:33 IDT",
+    "symbol": "CMS",
+    "side": "SLD",
+    "shares": 26.0,
+    "price": 71.7,
+    "avgPrice": 71.7,
+    "commission": 1.004888,
+    "realizedPNL": -39.185488
+  },
+  {
+    "time": "2025-10-03 16:30:47 IDT",
+    "symbol": "MRK",
+    "side": "BOT",
+    "shares": 21.0,
+    "price": 89.74,
+    "avgPrice": 89.74,
+    "commission": 1.000462,
+    "realizedPNL": 0.0
+  },
+  {
+    "time": "2025-10-03 16:31:26 IDT",
+    "symbol": "RBLX",
+    "side": "SLD",
+    "shares": 13.0,
+    "price": 125.1,
+    "avgPrice": 125.1,
+    "commission": 1.002444,
+    "realizedPNL": -211.432744
+  },
+  {
+    "time": "2025-10-03 16:31:37 IDT",
+    "symbol": "DD",
+    "side": "BOT",
+    "shares": 24.0,
+    "price": 81.32,
+    "avgPrice": 81.32,
+    "commission": 1.000528,
+    "realizedPNL": 0.0
+  }
+]
