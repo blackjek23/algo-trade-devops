@@ -3,6 +3,8 @@ services:
     build: ./exit  
     image: exit-atr:paper-true
     network_mode: "host"
+    volumes:
+      - ./logs:/logs
   BBand-enter:
     build: ./entry  
     image: entry-bband:paper-true
@@ -10,3 +12,5 @@ services:
     depends_on:
       ATR-exit:
         condition: service_completed_successfully
+    volumes:
+      - ./logs:/logs
