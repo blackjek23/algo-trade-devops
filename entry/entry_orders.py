@@ -2,6 +2,7 @@
 from ib_insync import Stock, MarketOrder
 from connect_ib import connect_ib, disconnect_ib
 import config
+from logger import log_entry_order
 
 
 def place_entry_orders(buy_signals, allocation_pct=0.02):
@@ -43,6 +44,8 @@ def place_entry_orders(buy_signals, allocation_pct=0.02):
             ib.qualifyContracts(contract)
             ib.placeOrder(contract, order)
             print(f"✅ Sent BUY order: {qty} {symbol} at ~{last_price:.2f}")
+            # Log the entry order
+            log_entry_order(date_str=None, ticker=symbol, order_type="BUY", qty=qty)
 
         except Exception as e:
             print(f"❌ Error placing order for {symbol}: {e}")

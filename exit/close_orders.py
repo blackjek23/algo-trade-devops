@@ -1,6 +1,7 @@
 # file: close_orders.py
 from ib_insync import MarketOrder
 from connect_ib import connect_ib, disconnect_ib
+from logger import log_exit_order
 import config
 
 
@@ -18,13 +19,18 @@ def close_positions(signals):
 
         if sig == "exit" and qty != 0:
             if qty > 0:
-                order = MarketOrder("SELL", qty)
+                order_type = "SELL"
+                order = MarketOrder(order_type, qty)
             else:
-                order = MarketOrder("BUY", abs(qty))
+                order_type = "BUY"
+                order = MarketOrder(order_type, abs(qty))
             try:
                 ib.qualifyContracts(p.contract)
                 ib.placeOrder(p.contract, order)
-                print(f"➡️ Sent {order.action} order to close {qty} {symbol}")
+                # Log the exit order
+                log_exit_order(
+                    date_str=None, ticker=symbol, order_type=order_type, qty=qty
+                )
             except Exception as e:
                 print(f"❌ Error closing {symbol}: {e}")
 
